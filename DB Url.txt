@@ -1,0 +1,1 @@
+DB URL: mongodb+srv://snejuti:12345@cluster0.nta98qw.mongodb.net/?retryWrites=true&w=majority
