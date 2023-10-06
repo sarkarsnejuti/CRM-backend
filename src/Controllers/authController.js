@@ -51,6 +51,10 @@ const login = async (req,res)=>{
         if(!isPasswordValid){
             return res.status(404).send({message:"Invalid Password"})
         }
+
+        if(user.userStatus!==userStatus.approved){
+            return res.status(403).send({message:"User status must be approved to login"})
+        }
     
        const token = jwt.sign({id:userId},process.env.SECRET,{expiresIn:'1h'});
        return res.status(200).send({
