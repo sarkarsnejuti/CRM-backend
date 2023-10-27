@@ -5,6 +5,12 @@ const userStatus = {
     approved:"APPROVED",
     rejected:"REJECTED"
 }
+const ticketStatus = {
+    open:"PENDING",
+    inProgress:"INPROGRESS",
+    blocked:"BLOCKED",
+    closed:"CLOSED"
+}
 
 const userTypes={
     customer:"CUSTOMER",
@@ -14,5 +20,6 @@ const userTypes={
 
 module.exports={
     userStatus,
-    userTypes
+    userTypes,
+    ticketStatus
 }

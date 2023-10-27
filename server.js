@@ -9,6 +9,7 @@ const authRoute = require("./src/Routes/authRoute");
 const userRoute = require("./src/Routes/userRoute");
 const serverConfig = require("./src/configs/server.configs");
 const { DB_URL} = require("./src/configs/db.configs");
+const ticketRoute = require("./src/Routes/ticketRoute");
 //require('dotenv').config()
 
 
@@ -40,3 +41,4 @@ app.listen(serverConfig.PORT, ()=>{
 
 authRoute(app);
 userRoute(app);
+ticketRoute(app);
